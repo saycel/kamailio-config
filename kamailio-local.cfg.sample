@@ -15,3 +15,6 @@
 
 #!substdef "!PEER_REGEX_2!^680001|^680681|^688201|^688261|^688101|^688001|^694071|^696101|^692201|^696951|^688851|^688471|^702701|^100001|^687251|^711301|^709661!g"
 #!substdef "!PEER_DOMAIN_2!sip.rhizomatica.org!g"
+
+#!substdef "!PRIVATE_KEY_PATH!/etc/letsencrypt/live/rhizortc.specialstories.org/privkey.pem!g"
+#!substdef "!CERTIFICATE_PATH!/etc/letsencrypt/live/rhizortc.specialstories.org/fullchain.pem!g"
