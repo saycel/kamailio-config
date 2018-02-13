@@ -1,8 +1,11 @@
 # kamailio-config
-This is the specific kamailio configuration necessary to deploy the [webph.one](https://github.com/saycel/Saycel.Phone) server for its corresponding [application](https://github.com/saycel/webph.one). The files are pulled into the Docker kamailio container. The repository is broken into three files:
-- kamailio-local.cfg.sample
+This is the specific kamailio configuration necessary to deploy the [webph.one](https://github.com/saycel/Saycel.Phone) server for its corresponding [application](https://github.com/saycel/webph.one). **The server has been tested using kamailio version 5.0.3**. The files are pulled into the Docker kamailio container. The repository is broken into three files:
+- **kamailio-local.cfg.sample**
     - This is a sample file of the env variables necessary for kamailio to run. To use, copy this file, adjust its variables accordingly, and rename it kamilio-local.cfg
-- kamailio-routing.cfg
+- **kamailio-routing.cfg**
     - This file is the dialplan logic for how webph.one handles calls. 
-- kamailio.cfg
+- **kamailio.cfg**
     - This file defines the kamailio modules required for webph.one.  It also configures the module parameters accordingly. 
+
+## Modules
+- Our setup requires you to install these kamailio-modules:  [jsonrpcs.so](https://kamailio.org/docs/modules/4.4.x/modules/jsonrpc-s.html), [kex.so](https://kamailio.org/docs/modules/4.4.x/modules/kex.html), [corex.so](https://kamailio.org/docs/modules/4.4.x/modules/corex.html), [tm.so](https://kamailio.org/docs/modules/4.4.x/modules/tm.html), [tmx.so](https://kamailio.org/docs/modules/4.4.x/modules/tmx.html), [sl.so](https://kamailio.org/docs/modules/4.4.x/modules/sl.html), [rr.so](https://kamailio.org/docs/modules/4.4.x/modules/rr.html), [pv.so](https://kamailio.org/docs/modules/4.4.x/modules/pv.html), [maxfwd.so](https://kamailio.org/docs/modules/4.4.x/modules/maxfwd.html), [usrloc.so](https://kamailio.org/docs/modules/4.4.x/modules/usrloc.html), [registrar.so](https://kamailio.org/docs/modules/4.4.x/modules/registrar.html), [textops.so](https://kamailio.org/docs/modules/4.4.x/modules/textops.html), [textopsx.so](https://kamailio.org/docs/modules/4.4.x/modules/textopsx.html), [sdpops.so](https://kamailio.org/docs/modules/4.4.x/modules/sdpops.html), [siputils.so](https://kamailio.org/docs/modules/4.4.x/modules/siputils.html), [xlog.so](https://kamailio.org/docs/modules/4.4.x/modules/xlog.html), [sanity.so](https://kamailio.org/docs/modules/4.4.x/modules/sanity.html), [ctl.so](https://kamailio.org/docs/modules/4.4.x/modules/ctl.html), [cfg_rpc.so](https://kamailio.org/docs/modules/4.4.x/modules/cfg_rpc.html), [acc.so](https://kamailio.org/docs/modules/4.4.x/modules/acc.html), [counters.so](https://kamailio.org/docs/modules/4.4.x/modules/counters.html), [htable.so](https://kamailio.org/docs/modules/4.4.x/modules/htable.html), [dialog.so](https://kamailio.org/docs/modules/4.4.x/modules/dialog.html)
