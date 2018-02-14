@@ -12,6 +12,7 @@
 #!substdef "!DBURL_REP!mysql://kamailio:kamailiorw@localhost/kamailio!g"
 #!define DBURL "DBURL_REP"
 #!substdef "!MY_RTPENGINE_IP_PORT!udp:127.0.0.1:2223!g"
+#!substdef "!DEBUG_LEVEL!4!g"
 
 #!substdef "!PEER_PREFIX_1!999100!g"
 #!substdef "!PEER_DOMAIN_1!rhizortc.specialstories.org!g"
