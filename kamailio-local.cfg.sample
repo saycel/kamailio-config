@@ -9,7 +9,8 @@
 #!substdef "!MY_PUSH_NOTIF_URL!http://127.0.0.1:3000!g"
 #!substdef "!CONF_SERVER_IP!MY_IP_ADDR!g"
 #!substdef "!CONF_SERVER_PORT!5080!g"
-#!substdef "!DBURL!mysql://kamailio:kamailiorw@localhost/kamailio!g"
+#!substdef "!DBURL_REP!mysql://kamailio:kamailiorw@localhost/kamailio!g"
+#!define DBURL "DBURL_REP"
 #!substdef "!MY_RTPENGINE_IP_PORT!udp:127.0.0.1:2223!g"
 
 #!substdef "!PEER_PREFIX_1!999100!g"
